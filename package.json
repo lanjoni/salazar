@@ -1,0 +1,49 @@
+{
+  "name": "salazar-beta",
+  "version": "1.0.0",
+  "description": "A simple and elegant TypeScript Discord bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gutoso/salazar-beta.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gutoso/salazar-beta/issues"
+  },
+  "homepage": "https://github.com/gutoso/salazar-beta#readme",
+  "dependencies": {
+    "cross-fetch": "^3.1.5",
+    "discord.js": "^13.6.0",
+    "dotenv": "^16.0.0",
+    "node-fetch": "^3.2.3",
+    "random-animals-api": "^1.2.6"
+  },
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "lib": [
+      "es2020"
+    ],
+    "module": "es2022",
+    "preserveConstEnums": true,
+    "moduleResolution": "node",
+    "strict": true,
+    "sourceMap": true,
+    "target": "es2022",
+    "types": [
+      "node"
+    ],
+    "outDir": "dist"
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
