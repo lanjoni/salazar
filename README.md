@@ -17,3 +17,35 @@ The source code has a complete implementation of libraries responsible for conne
 The main file that will have the role as the "heart" of our project will be "index.ts", with imports referring to "discord.js" and "dotenv" (responsible for creating a ".env" configuration file that will contain our previously created BOT access token).
 
 Before starting your implementations with the BOT, make sure your generated token is correct. To do this, change it by adding your token in the ".env" file and start your BOT with the command "ts-node index.ts" in the terminal. Test some Discord command in which your BOT was added, such as "!gato" to see a photo of a cat returned in the message field.
+
+Now that you are sure that your BOT is working perfectly, we can move on to full customization and customization.
+
+#
+
+### Code understanding
+
+For any code study, it is vital that we have a full understanding of how the code works, and for that, this area is dedicated to a study of the source code.
+
+Initially, we must emphasize the need for imports provided by other libraries, in order to facilitate our daily life in relation to the development of BOTs, so we have some imports seen at the beginning of our code, followed by a call of a function responsible for the validation of our token (the BOT token created with Discord). Until the first function export we have initial settings for validation of our platform. With this, as soon as the BOT is working properly, we will see a message in our chat alerting its correct operation and connection to the platform.
+
+* The export of this function named "http" will be responsible for validating commands and returns within Discord, so all code referring to the return with some message, reaction or something like that will be done within this function.
+
+The "discord.js" library already provides functions related to the BOT's interaction with Discord, such as creating messages for verification, or returning messages through direct responses. We can see that when a message is created, it is checked with "client.on('messageCreate', (message))", and so we can assign a series of commands to return or reply.
+
+The reply of some message can be done with "message.reply({content: reply})" in which "reply" is a variable with some specific content, as well as it could be a simple sentence too.
+
+Finally, we have the BOT login with "client.login(process.env.TOKEN)" which verifies our previously provided token.
+
+Now that we understand the basics of how our code works, initialization steps and first interactions with the user, we can start studying the use of web APIs, pre-defined commands or different functions.
+
+#
+
+### Web API implementations
+
+For each API used, a specialized file was created to better organize and compose our BOT. For this, I will cite as an example the file "quotes.ts", responsible for returning a user-friendly random phrase.
+
+At the beginning we have the import of a library called "cross-fetch", which will be responsible for facilitating our verification process and returning an API, exporting an async function called "quote", which will return the content of a JSON via the web , that is, the JSON of our API that can be verified in the link by <a href="https://positive-vibes-api.herokuapp.com/quotes/random">clicking here</a>.
+
+As soon as the return is done successfully, we will store the complete JSON content in a variable, which will later be "wrapped" and filtered so that we only have the content of a specific column or attribute, allowing for a more pleasant interface for the user.
+
+This same variable will be returned, and this function will be called in our "index.ts" every time it is verified that the message "!frase" has been sent in our Discord.
