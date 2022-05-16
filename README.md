@@ -49,3 +49,15 @@ At the beginning we have the import of a library called "cross-fetch", which wil
 As soon as the return is done successfully, we will store the complete JSON content in a variable, which will later be "wrapped" and filtered so that we only have the content of a specific column or attribute, allowing for a more pleasant interface for the user.
 
 This same variable will be returned, and this function will be called in our "index.ts" every time it is verified that the message "!frase" has been sent in our Discord.
+
+* It is important to point out that this version of Salazar uses the current version of Node.js, so the "fetch" function is already pre-implemented for using web APIs, so it is vital that if you use a configuration with the version LTS use the final official version of Salazar. The BETA version aims to make use of new features made available by the community.
+
+Finally, in our "index.ts" we have the import and call of the "quote" function, with the creation of a "Waiter" class (essential for using async functions), and then the return of the message with its content being the variable that received the return from our web API.
+
+---
+
+Every command and every use of a web API can be easily verified, thus facilitating our customization. As time goes by, new updates will be released, so it's vital that you contribute to our community. Thank you very much, and good use 🧙!
+
+---
+
+<img alt="GitHub followers" src="https://img.shields.io/github/followers/gutoso?style=social"> ⠀<img alt="Twitch Status" src="https://img.shields.io/twitch/status/holly1v4?style=social"> ⠀<img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/gutolanjoni?style=social">
