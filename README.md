@@ -10,4 +10,10 @@ All updates will be notified and duly amended in this documentation for a comple
 
 ---
 
+### Basic installation
 
+The source code has a complete implementation of libraries responsible for connecting the code with the Discord platform. First of all, it is necessary that you create your personal bot, and thus, generate a token for its access. To access the "Discord Developer Portal" <a href="https://discord.com/developers/docs/intro">click here</a>. To read a little more about specific functions of the "discord.js" used in this project <a href="https://discord.js.org/#/">click here</a>.
+
+The main file that will have the role as the "heart" of our project will be "index.ts", with imports referring to "discord.js" and "dotenv" (responsible for creating a ".env" configuration file that will contain our previously created BOT access token).
+
+Before starting your implementations with the BOT, make sure your generated token is correct. To do this, change it by adding your token in the ".env" file and start your BOT with the command "ts-node index.ts" in the terminal. Test some Discord command in which your BOT was added, such as "!gato" to see a photo of a cat returned in the message field.
