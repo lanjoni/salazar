@@ -8,6 +8,11 @@ Salazar emerged as an alternative to the classic pre-customized BOT's offered on
 
 All updates will be notified and duly amended in this documentation for a complete reading of the full operation of this BOT. If you are interested in contributing, feel free, your point of view and your implementations are essential for the vital functioning of the project.
 
+If you want to easily add this package to your project run:
+```
+npm i salazar-beta
+```
+
 ---
 
 ### Basic installation
