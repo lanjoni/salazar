@@ -13,6 +13,14 @@ If you want to easily add this package to your project run:
 npm i salazar-beta
 ```
 
+If you don't already have TypeScript and "ts-node" installed, run the following commands:
+```
+npm install -g typescript
+
+npm install -g ts-node
+```
+These installations are necessary for our system to function properly.
+
 ---
 
 ### Basic installation
